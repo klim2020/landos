@@ -1,0 +1,8 @@
+
+@import "bootstrap/scss/bootstrap";
+
+// Default variable overrides
+$primary: #000;
+$body-color: #111;
+@import "@/scss/override.scss";
+@import '@/scss/style.css';

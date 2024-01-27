@@ -1,0 +1,8 @@
+
+@import "bootstrap/scss/bootstrap";
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+// Default variable overrides
+
+@import "@/scss/override.scss";
+@import '@/scss/style.css';

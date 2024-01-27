@@ -1,0 +1,9 @@
+@import "../node_modules/bootstrap/scss/functions";
+//rewrite
+@import "@/scss/override.scss";
+
+
+@import "bootstrap/scss/bootstrap";
+
+// Default variable overrides
+@import '@/scss/style.css';
