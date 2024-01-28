@@ -4,5 +4,9 @@
 
 @import "bootstrap/scss/bootstrap";
 
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+
+
 // override main styles
-@import '@/scss/style.scss';
+@import '@/scss/main.scss';

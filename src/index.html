@@ -1,39 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap w/ Vite</title>
   </head>
-  <body class = "bg-primary">
-
+  <body class="bg-primary">
     <!--Navbar-->
+    <nav
+      class="navbar border-bottom border-secondary border-1 py-4 navbar-dark navbar-expand-md bg-primary bg-gradient"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">!Logo!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-3 mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-brands fa-whatsapp"></i
+                ><span class="mx-2">Watsapp</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-brands fa-telegram"></i
+                ><span class="mx-2">Telegram</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fa-brands fa-discord"></i
+                ><span class="mx-2">Discord</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- !Navbar -->
 
-    <nav class="navbar border-bottom border-secondary border-1 py-4 navbar-dark navbar-expand-md bg-primary">
-        <div class="container">
-          <a class="navbar-brand" href="#">!Logo!</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse  navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav gap-3 mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Watsapp</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Telegram</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Discord</a>
-              </li>
-            </ul>
+
+
+    <!--HeroBlock-->
+    <div class="px-4 py-5 text-center bg-white position-relative">
+      <img id="hero-image" loading="lazy" class="hero-image"  srcset = '/img/bitcoin.jpg?w=640;960;1200&format=webp&srcset'/>
+      <div class="hero-content">
+        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 fs-3 text">
+            Quickly design and customize responsive mobile-first sites with
+            Bootstrap, the world’s most popular front-end open source toolkit,
+            featuring Sass variables and mixins, responsive grid system, extensive
+            prebuilt components, and powerful JavaScript plugins.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              Primary button
+            </button>
+            <button type="button" class="btn btn-secondary btn-lg px-4">
+              Secondary
+            </button>
           </div>
         </div>
-    </nav>
+      </div>
+    </div>
+    <!--!Heroblock -->
 
-    <!-- !Navbar -->
 
     <script type="module" src="./js/main.js"></script>
   </body>
