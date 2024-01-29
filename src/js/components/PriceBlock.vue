@@ -37,8 +37,8 @@ onMounted(() => {
     <table class="table table-primary table-sm ">
       <thead class="">
         <tr>
-          <th scope="col"></th>
-          <th scope="col">Название</th>
+          <th class="d-none d-sm-table-cell" scope="col"></th>
+          <th class="d-none d-sm-table-cell" scope="col">Название</th>
           <th scope="col">Знак</th>
           <th scope="col">Стоимость(USD)</th>
           <th scope="col">Купить</th>
@@ -46,8 +46,8 @@ onMounted(() => {
       </thead>
       <tbody>
         <tr class="my-4" v-for="item,index in currencyList" :key="index">
-          <td class="align-middle">{{ index+1 }}</td>
-          <td class="align-middle ">{{ item.name }}</td>
+          <td class="align-middle d-none d-sm-table-cell">{{ index+1 }}</td>
+          <td class="align-middle d-none d-sm-table-cell">{{ item.name }}</td>
           <td class="align-middle text-secondary">{{ item.sign }}</td>
           <td class="align-middle">${{ item.currency }}</td>
           <td class="align-middle"><a class="btn bg-secondary-hover border border-secondary rounded">Купить</a></td>
