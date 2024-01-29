@@ -1,0 +1,9 @@
+.table-primary {
+    --bs-table-bg:transparent;
+  } 
+
+
+  .bg-secondary-hover:hover{
+    background-color: $secondary;
+    color:$primary !important;
+  }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap w/ Vite</title>
   </head>
-  <body class="bg-primary">
+  <body class="bg-secondary">
     <!--Navbar-->
     <nav
       class="navbar border-bottom border-secondary border-1 py-4 navbar-dark navbar-expand-md bg-primary bg-gradient"
@@ -51,32 +51,83 @@
     </nav>
     <!-- !Navbar -->
 
-
-
     <!--HeroBlock-->
-    <div class="px-4 py-5 text-center bg-white position-relative">
-      <img id="hero-image" loading="lazy" class="hero-image"  srcset = '/img/bitcoin.jpg?w=640;960;1200&format=webp&srcset'/>
+    <div class="px-4 py-5 text-center bg-primary position-relative dark-mode">
+      <img
+        id="hero-image"
+        loading="lazy"
+        class="hero-image"
+        srcset="/img/bitcoin.jpg?w=640;960;1200&format=webp&srcset"
+      />
       <div class="hero-content">
-        <h1 class="display-5 fw-bold">Centered hero</h1>
+        <h1 class="display-5 fw-bold">Про нас</h1>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4 fs-3 text">
-            Quickly design and customize responsive mobile-first sites with
-            Bootstrap, the world’s most popular front-end open source toolkit,
-            featuring Sass variables and mixins, responsive grid system, extensive
-            prebuilt components, and powerful JavaScript plugins.
+            Фонд ликвидации криптобирж - платформа по распродаже активов
+            криптобирж которые проходят банкротсво.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-              Primary button
+            <button type="button" class="btn btn-info btn-lg px-4 gap-3">
+              Подробнее
             </button>
             <button type="button" class="btn btn-secondary btn-lg px-4">
-              Secondary
+              Связаться
             </button>
           </div>
         </div>
       </div>
     </div>
     <!--!Heroblock -->
+
+    <div class="b-example-divider"></div>
+
+    <!--CountBlock-->
+    <div id="counter" class="bg-white vue">
+      <counter-block></counter-block>
+    </div>
+    <!--!CountBlock-->
+
+    <div class="b-example-divider"></div>
+
+    <!--Price currency-->
+    <div id="price-currency" class="bg-primary bg-gradient py-5">
+      <price-block></price-block>
+    </div>
+    <!--!Price currency-->
+
+    <div class="b-example-divider"></div>
+
+    <!--HeroBlock2-->
+    <div class="px-4 py-5 text-center bg-primary position-relative dark-mode">
+      <img
+        id="hero-image"
+        loading="lazy"
+        class="hero-image"
+        srcset="/img/bitcoin.jpg?w=640;960;1200&format=webp&srcset"
+      />
+      <div class="hero-content">
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 fs-3 text">
+            Покупайте криптовалюту: безопастно, легче и дешевле!
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn text-black btn-warning btn-lg px-4 gap-3">
+              Подробнее
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary text-black btn-lg px-4"
+            >
+              Связаться
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--!Heroblock2 -->
+
+    <div class="b-example-divider"></div>
+
 
 
     <script type="module" src="./js/main.js"></script>

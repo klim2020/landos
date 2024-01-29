@@ -6,3 +6,5 @@ import '@fortawesome/fontawesome-free/js/fontawesome';
 import '@fortawesome/fontawesome-free/js/solid';
 
 import '@/js/images';
+
+import '@/js/vue3.js';

@@ -6,7 +6,9 @@
 
 @import "@fortawesome/fontawesome-free/css/all.css";
 
-
-
-// override main styles
+// add additional styles
 @import '@/scss/main.scss';
+
+//override bootstrap classes
+@import '@/scss/bsclassoverride.scss';
+

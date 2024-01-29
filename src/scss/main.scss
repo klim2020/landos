@@ -3,6 +3,16 @@
   line-height: 1.5;
 }
 
+//dark mode
+.dark-mode{
+  * {
+    color:white ;
+  }
+  color:white ;
+  td,th{
+    color: white
+  }
+}
 
 
 //Hero block
@@ -17,7 +27,7 @@
   top:0;
   width: 100%;
   height: 100%;
-  opacity:0.4;
+  opacity:0.1;
   z-index: 1;
   
 }
@@ -26,5 +36,23 @@
   position: relative;
   z-index: 2;
 }
+
+
+//divider
+
+.b-example-divider
+{
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 77, 139, 0.1);
+  border: solid rgba(0, 0, 0, .15);
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
 
 
