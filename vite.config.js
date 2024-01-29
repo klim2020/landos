@@ -15,6 +15,7 @@ export default {
         { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
     ]
   },
-  build: { chunkSizeWarningLimit: 1600, }
+  build: { chunkSizeWarningLimit: 1600, },
+  base: '/landos/'
 
 }
