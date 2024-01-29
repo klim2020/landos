@@ -20,3 +20,7 @@ in main.js
 
 //change bootstrap 5 color https://stackoverflow.com/questions/77039298/custom-background-colour-wont-override-bootstrap-5-3s
 
+//html bootstrap example library https://library.livecanvas.com/sections/category/features/
+
+//icons library - https://icones.js.org/collection/all?s=course
+
