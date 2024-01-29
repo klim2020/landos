@@ -1,7 +1,4 @@
 
-https://miro.com/welcomeonboard/RlFEZEZCTTlqWGwyRUFSZ29kYmhRbkVRMkFXZ28wS05FZ1VSaFM0MXBaUkQ0a1RtTGlFT3VZUGw2NTR0RGxRQ3wzNDU4NzY0NTYzMzA2MzE4NzE1fDI=?share_link_id=840376534912
-
-https://wiex.io/
 
 
 work with images
