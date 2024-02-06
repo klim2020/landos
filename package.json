@@ -26,6 +26,8 @@
     "@vitejs/plugin-vue": "^5.0.3",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
+    "intl-tel-input": "^19.2.16",
+    "utils": "^0.3.1",
     "vue": "^3.4.15"
   }
 }

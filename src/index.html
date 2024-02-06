@@ -5,6 +5,8 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/css/intlTelInput.css">
+    <script type="text/javascript" src="https://unpkg.com/exposure-utils@1.0.14/dist/utils.min.js"></script>
     <title>Bootstrap w/ Vite</title>
   </head>
   <body class="bg-secondary">
@@ -58,7 +60,10 @@
     <!-- !Navbar -->
 
     <!--HeroBlock-->
-    <div id="heroblock" class="px-4 py-5 text-center bg-primary position-relative dark-mode">
+    <div
+      id="heroblock"
+      class="px-4 py-5 text-center bg-primary position-relative dark-mode"
+    >
       <img
         id="hero-image"
         loading="lazy"
@@ -80,10 +85,19 @@
             криптобирж которые проходят банкротсво.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-info btn-lg px-4 gap-3">
+            <button
+              
+              data-bs-toggle="modal"
+              data-bs-target="#modalForm"
+              type="button"
+              class="btn btn-info btn-lg px-4 gap-3"
+            >
               Подробнее
             </button>
             <button
+              
+              data-bs-toggle="modal"
+              data-bs-target="#modalForm"
               type="button"
               class="btn btn-secondary btn-lg px-4 text-dark"
             >
@@ -148,7 +162,7 @@
     <div class="b-example-divider"></div>
 
     <!-- Tabs -->
-    <section id = "tabs" class="bg-white py-4">
+    <section id="tabs" class="bg-white py-4">
       <div class="container">
         <ul
           class="nav nav-pills border-bottom border-1 py-1 justify-content-center"
@@ -800,6 +814,65 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Click on Modal Button -->
+
+    <!-- Modal -->
+
+    <div
+      class="modal fade"
+      id="modalForm"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Связатся с нами
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Имя</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="username"
+                  name="username"
+                  placeholder="Имя"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Телефон (Telegram или Watsapp)</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="+380"
+                />
+              </div>
+              
+              <div class="modal-footer d-block">
+                
+                <button type="submit" class="btn btn-primary float-end">
+                  Связаться
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="./js/main.js"></script>
   </body>

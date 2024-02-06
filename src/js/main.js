@@ -8,13 +8,14 @@ import '@fortawesome/fontawesome-free/js/solid';
 import '@/js/images';
 
 import '@/js/vue3.js';
+import intlTelInput from 'intl-tel-input';
 
 //Sidebar block
 
 
 
 //$('#sidebar').toggleClass('active');
-
+//Scrolldown
 
 document.addEventListener('DOMContentLoaded',()=>{
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -27,3 +28,12 @@ document.addEventListener('DOMContentLoaded',()=>{
         });
     });
 })
+
+
+
+
+
+const input = document.querySelector("#phone");
+intlTelInput(input, {
+    utilsScript: "path/to/utils.js"
+});
