@@ -24,7 +24,6 @@ onMounted(() => {
         currency: 1 / response.data.data.rates[el.sign],
       };
       currencyList.value.push(record);
-      console.log(record);
     })
       
     });

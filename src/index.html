@@ -8,6 +8,12 @@
     <title>Bootstrap w/ Vite</title>
   </head>
   <body class="bg-secondary">
+    <!--Sidebar-->
+    <div id="sidebar2">
+      <side-bar></side-bar>
+    </div>
+    <!--Sidebar-->
+
     <!--Navbar-->
     <nav
       class="navbar border-bottom border-secondary border-1 py-4 navbar-dark navbar-expand-md bg-primary bg-gradient"
@@ -52,7 +58,7 @@
     <!-- !Navbar -->
 
     <!--HeroBlock-->
-    <div class="px-4 py-5 text-center bg-primary position-relative dark-mode">
+    <div id="heroblock" class="px-4 py-5 text-center bg-primary position-relative dark-mode">
       <img
         id="hero-image"
         loading="lazy"
@@ -61,7 +67,14 @@
       />
       <div class="hero-content">
         <h1 class="display-5 fw-bold">Про нас</h1>
-        <div class="col-lg-6 mx-auto">
+        <div
+          class="col-lg-6 mx-auto"
+          data-aos="zoom-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-center"
+          data-aos-once="true"
+        >
           <p class="lead mb-4 fs-3 text">
             Фонд ликвидации криптобирж - платформа по распродаже активов
             криптобирж которые проходят банкротсво.
@@ -135,7 +148,7 @@
     <div class="b-example-divider"></div>
 
     <!-- Tabs -->
-    <section class="bg-white py-4">
+    <section id = "tabs" class="bg-white py-4">
       <div class="container">
         <ul
           class="nav nav-pills border-bottom border-1 py-1 justify-content-center"
@@ -385,24 +398,38 @@
     <section id="features" class="bg-white py-4">
       <div class="container text-center">
         <div class="service-heading-block">
-          <h2 class="text-center title">
-            Наша миссия
-          </h2>
+          <h2 class="text-center title">Наша миссия</h2>
           <p class="text-center">
-            Мы работаем для того, чтобы люди  жили лучше и богаче, сохраняя свои деньги каждый день
+            Мы работаем для того, чтобы люди жили лучше и богаче, сохраняя свои
+            деньги каждый день
           </p>
         </div>
         <div class="row align-items-stretch">
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="text-center feature-block">
               <span class="fb-icon color-info">
-                <img width="48px" src="/img/coins.svg" alt="">
+                <img width="48px" src="/img/coins.svg" alt="" />
               </span>
               <h4 class="color-info">Обязательства</h4>
               <p class="">
-                Помочь биржам выполнить долговые обязательства перед кредиторами и выплатить все долги!
+                Помочь биржам выполнить долговые обязательства перед кредиторами
+                и выплатить все долги!
               </p>
-              <a href="javascript:void(0)" class="btn btn-info "
+              <a href="javascript:void(0)" class="btn btn-info">Нажми сюда</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="text-center feature-block">
+              <span class="fb-icon color-warning">
+                <img width="48px" src="/img/handshake.svg" alt="" />
+              </span>
+              <h4 class="color-warning">Помощь</h4>
+              <p class="">
+                Помощь пользователям в безопастном приобретение криптоактивов по
+                выгодной цене
+              </p>
+              <a href="javascript:void(0)" class="btn btn-warning"
                 >Нажми сюда</a
               >
             </div>
@@ -410,33 +437,18 @@
 
           <div class="col-lg-4 col-md-6 col-sm-6">
             <div class="text-center feature-block">
-              <span class="fb-icon color-warning">
-                <img width="48px" src="/img/handshake.svg" alt="">
-              </span>
-              <h4 class="color-warning">Помощь</h4>
-              <p class="">
-                Помощь пользователям в безопастном приобретение криптоактивов  по выгодной цене
-              </p>
-              <a href="javascript:void(0)" class="btn btn-warning "
-                >Нажми сюда</a
-              >
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="text-center feature-block ">
               <span class="fb-icon color-success">
-                <img width="48px" src="/img/course.svg" alt="">
+                <img width="48px" src="/img/course.svg" alt="" />
               </span>
               <h4 class="color-success">Регуляция</h4>
               <p class="">
-                  Регуляция курса - в целях избежания резких обвалов и ликвидации активов пользователей
+                Регуляция курса - в целях избежания резких обвалов и ликвидации
+                активов пользователей
               </p>
               <a href="javascript:void(0)" class="btn btn-success"
                 >Нажми сюда</a
               >
             </div>
-          </div>
           </div>
         </div>
       </div>
@@ -447,200 +459,347 @@
 
     <section id="accordeon" class="bg-primary bg-gradient py-4 mt-6">
       <div class="container bg-primary bg-gradient">
-        <h2 class="text-center py-2 title dark-mode">
-          F.A.Q.
-        </h2>
+        <h2 class="text-center py-2 title dark-mode">F.A.Q.</h2>
         <div class="row justify-content-center">
-              <div class="col-11">
-                  <div class="accordion accordion-flush" id="faqlist">
-                      <div class="accordion-item">
-                          <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                                Почему криптовалюта продается дешевле рынка ?
-                              </button>
-                          </h2>
-                          <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                              <div class="accordion-body">
-                                <p>
-                                Потому что данная криптовалюта заблокирована в связи с банкротством .
-                                Когда крипто биржа подает на банкротство ,стоимость криптовалюты замораживается 
-                                Это сделано для того ,что бы активы которые потенциально могут стать дешевле (в момент банкротство крипто биржы это и произошло ) могли быть оценены и было понимание сколько кредиторы потенциально могли бы получить денег .К сожалению для кредиторов законы о криптовалюте не идеальны ,но вместе с этим простые пользователи получают хорошую возможность что бы купить криптовалюту в разы дешевле ,благодаря тому что на данный момент криптовалюта очень растет
-                                </p>
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="accordion-item">
-                          <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                                Есть ли скрытые комисси?
-                              </button>
-                          </h2>
-                          <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                              <div class="accordion-body">
-                                С нашей стороны отсутсвуют любые скрытие комисси!
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="accordion-item">
-                          <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                                Анонимно ли это?
-                              </button>
-                          </h2>
-                          <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                              <div class="accordion-body">
-                                Так как мы являемся организацией распорядителем ,по условиям вердикта суда ,который вел банкротство биржи Ftx ,криптовалюта может быть отправлена только на биржы партнеры (список )
-                                Главным преимуществом ,является то что вы сначала получаете криптовалюту на свой кошелек и только после этого вносите оплату .
-                                Как только ваша оплата была подтверждена ,активы которые были приобретены с дисконтом и находятся на вашем кошелке - сразу же будут разблокированы  .
-                                Этот способ яТак как мы являемся организацией распорядителем ,по условиям вердикта суда ,который вел банкротство биржи Ftx ,криптовалюта может быть отправлена только на биржы партнеры (список )
-                                Главным преимуществом ,является то что вы сначала получаете криптовалюту на свой кошелек и только после этого вносите оплату .
-                                Как только ваша оплата была подтверждена ,активы которые были приобретены с дисконтом и находятся на вашем кошелке - сразу же будут разблокированы .
-                                Этот способ является гарантией для простых пользователей ,которывляется гарантией для простых пользователей ,которые хотят купить криптовалюты с дисконтом
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="accordion-item">
-                          <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
-                                Безопастно ли проходит покупка?
-                              </button>
-                          </h2>
-                          <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                              <div class="accordion-body">
-                                В качестве гаранта сделки мы используем платформы наших партнеров!
-                                Так как мы являемся организацией распорядителем ,по условиям вердикта суда ,который вел банкротство биржи Ftx ,криптовалюта может быть отправлена только на биржы партнеры!
-                                В случае продажи крипто активов, гарантом выступает кошелек Coinbase!
-                                На основе комерческого сотркдничества, они предоставляют свою платформу как гарант проведения успешных сделок!
-                                Это позволяет нам безопастно отправлятяь активы партнеров на ваши кошельки метамакс, на момнт проведения сделки активы наших партнеров которые мы переводим на ваши счета будут заморожены, до момента полной оплаты!
-                                После того как мы переводим вам средства у вас есть 10 минут что бы оплатить и закрыть сделку, после оплаты и подтверждения сделки нашим агентом, мы передаем информацию нашим контр агентам о проведении успещной сделки и тогда они размораживают средства которые мы перевели на ваш счет!
-                              </div>
-                          </div>
-                      </div>
-  
-                      <div class="accordion-item">
-                          <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
-                                С каким дисконтом я могу купить криптовалюту
-                              </button>
-                          </h2>
-                          <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                              <div class="accordion-body">
-                                Так как активы были в момент банкротства на самой низкой отметке 2022 года и учитывая какой рост сейчас
-                                На разные криптовалюты дисконт может составлять до 60% от рыночной цены
-                              </div>
-                          </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-6">
-                              Какие криптовалюты доступны для покупки ?
-                            </button>
-                        </h2>
-                        <div id="faq-content-6" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                              Наш фонд продает криптовалюту пулами ,учитывая огромный спрос среди пользователей эту информацию лучше уточнить у консультантаны
-                            </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-7">
-                              Почему кредиторы сами не выкупают криптовалюты ?цена же сейчас выросла
-                            </button>
-                        </h2>
-                        <div id="faq-content-7" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                              По антипольному законодательству  ,кредиторы не имеют права получать эти активы для того что бы не создавать давления .
-Так как любой кредитор получил актив в свои руки ,в первую очередь будет его продавать для того что бы частично отбить свои убытки ,что в последствии могло бы привести к новому потоку банкротства ,именно по этому активы всех компаний которые подлежат банкротству на распродаются пулами и не большими обьемами
-                            </div>
-                        </div>
-                      </div>
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-8">
-                              Какое количество криптовалюты я могу купить ?
-                            </button>
-                        </h2>
-                        <div id="faq-content-8" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                              Какое количество криптовалюты я могу купить ?
-Количество каждый день разное эту информацию лучше уточнить у консультанта .
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-9">
-                              Как происходит процесс покупки криптовалюты ?
-                            </button>
-                        </h2>
-                        <div id="faq-content-9" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body">
-                              <ul>
-                              <li>1.Связаться с оператором</li>
-                              <li> 2.Указать сумму которую хотите получить</li>
-                                <li> 3.Предоставить адрес на который вы будете получать криптовалюту</li>
-                              *внимание ,адрес должен быть на бирже партнере
-                              <li>4.Подтвердить получения криптовалюты на свой адрес с оператором</li>
-                              <li> 5.Оплатить криптовалюту в течении 60 минут после получения</li>
-                              Методы оплаты уточняйте у оператора
-                              <li> 6.После подтверждения оплаты ,подождать до 60 минут и пользоваться полученной криптовалютой</li>
-                              </p>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-10">
-                              Сколько раз я могу приобретении криптовалюту с дисконтом ?
-                            </button>
-                        </h2>
-                        <div id="faq-content-10" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                            <div class="accordion-body"><p>
-                              Один кошелек имеет право приобрести криптовалюту с дисконтом 2 раза .
-                              Политика по отмыванию денежных средств очень строгая .Для избежание отмывание денег было введено ограничение ,не более 2х раз на один кошелек
-                              </p>
-                            </div>
-                        </div>
-                      </div>
-
+          <div class="col-11">
+            <div class="accordion accordion-flush" id="faqlist">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-1"
+                  >
+                    Почему криптовалюта продается дешевле рынка ?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Потому что данная криптовалюта заблокирована в связи с
+                      банкротством . Когда крипто биржа подает на банкротство
+                      ,стоимость криптовалюты замораживается Это сделано для
+                      того ,что бы активы которые потенциально могут стать
+                      дешевле (в момент банкротство крипто биржы это и произошло
+                      ) могли быть оценены и было понимание сколько кредиторы
+                      потенциально могли бы получить денег .К сожалению для
+                      кредиторов законы о криптовалюте не идеальны ,но вместе с
+                      этим простые пользователи получают хорошую возможность что
+                      бы купить криптовалюту в разы дешевле ,благодаря тому что
+                      на данный момент криптовалюта очень растет
+                    </p>
                   </div>
+                </div>
               </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-2"
+                  >
+                    Есть ли скрытые комисси?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    С нашей стороны отсутсвуют любые скрытие комисси!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-3"
+                  >
+                    Анонимно ли это?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Так как мы являемся организацией распорядителем ,по условиям
+                    вердикта суда ,который вел банкротство биржи Ftx
+                    ,криптовалюта может быть отправлена только на биржы партнеры
+                    (список ) Главным преимуществом ,является то что вы сначала
+                    получаете криптовалюту на свой кошелек и только после этого
+                    вносите оплату . Как только ваша оплата была подтверждена
+                    ,активы которые были приобретены с дисконтом и находятся на
+                    вашем кошелке - сразу же будут разблокированы . Этот способ
+                    яТак как мы являемся организацией распорядителем ,по
+                    условиям вердикта суда ,который вел банкротство биржи Ftx
+                    ,криптовалюта может быть отправлена только на биржы партнеры
+                    (список ) Главным преимуществом ,является то что вы сначала
+                    получаете криптовалюту на свой кошелек и только после этого
+                    вносите оплату . Как только ваша оплата была подтверждена
+                    ,активы которые были приобретены с дисконтом и находятся на
+                    вашем кошелке - сразу же будут разблокированы . Этот способ
+                    является гарантией для простых пользователей ,которывляется
+                    гарантией для простых пользователей ,которые хотят купить
+                    криптовалюты с дисконтом
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-4"
+                  >
+                    Безопастно ли проходит покупка?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    В качестве гаранта сделки мы используем платформы наших
+                    партнеров! Так как мы являемся организацией распорядителем
+                    ,по условиям вердикта суда ,который вел банкротство биржи
+                    Ftx ,криптовалюта может быть отправлена только на биржы
+                    партнеры! В случае продажи крипто активов, гарантом
+                    выступает кошелек Coinbase! На основе комерческого
+                    сотркдничества, они предоставляют свою платформу как гарант
+                    проведения успешных сделок! Это позволяет нам безопастно
+                    отправлятяь активы партнеров на ваши кошельки метамакс, на
+                    момнт проведения сделки активы наших партнеров которые мы
+                    переводим на ваши счета будут заморожены, до момента полной
+                    оплаты! После того как мы переводим вам средства у вас есть
+                    10 минут что бы оплатить и закрыть сделку, после оплаты и
+                    подтверждения сделки нашим агентом, мы передаем информацию
+                    нашим контр агентам о проведении успещной сделки и тогда они
+                    размораживают средства которые мы перевели на ваш счет!
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-5"
+                  >
+                    С каким дисконтом я могу купить криптовалюту
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Так как активы были в момент банкротства на самой низкой
+                    отметке 2022 года и учитывая какой рост сейчас На разные
+                    криптовалюты дисконт может составлять до 60% от рыночной
+                    цены
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-6"
+                  >
+                    Какие криптовалюты доступны для покупки ?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Наш фонд продает криптовалюту пулами ,учитывая огромный
+                    спрос среди пользователей эту информацию лучше уточнить у
+                    консультантаны
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-7"
+                  >
+                    Почему кредиторы сами не выкупают криптовалюты ?цена же
+                    сейчас выросла
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-7"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    По антипольному законодательству ,кредиторы не имеют права
+                    получать эти активы для того что бы не создавать давления .
+                    Так как любой кредитор получил актив в свои руки ,в первую
+                    очередь будет его продавать для того что бы частично отбить
+                    свои убытки ,что в последствии могло бы привести к новому
+                    потоку банкротства ,именно по этому активы всех компаний
+                    которые подлежат банкротству на распродаются пулами и не
+                    большими обьемами
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-8"
+                  >
+                    Какое количество криптовалюты я могу купить ?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-8"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    Какое количество криптовалюты я могу купить ? Количество
+                    каждый день разное эту информацию лучше уточнить у
+                    консультанта .
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-9"
+                  >
+                    Как происходит процесс покупки криптовалюты ?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-9"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>1.Связаться с оператором</li>
+                      <li>2.Указать сумму которую хотите получить</li>
+                      <li>
+                        3.Предоставить адрес на который вы будете получать
+                        криптовалюту
+                      </li>
+                      *внимание ,адрес должен быть на бирже партнере
+                      <li>
+                        4.Подтвердить получения криптовалюты на свой адрес с
+                        оператором
+                      </li>
+                      <li>
+                        5.Оплатить криптовалюту в течении 60 минут после
+                        получения
+                      </li>
+                      Методы оплаты уточняйте у оператора
+                      <li>
+                        6.После подтверждения оплаты ,подождать до 60 минут и
+                        пользоваться полученной криптовалютой
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq-content-10"
+                  >
+                    Сколько раз я могу приобретении криптовалюту с дисконтом ?
+                  </button>
+                </h2>
+                <div
+                  id="faq-content-10"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqlist"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Один кошелек имеет право приобрести криптовалюту с
+                      дисконтом 2 раза . Политика по отмыванию денежных средств
+                      очень строгая .Для избежание отмывание денег было введено
+                      ограничение ,не более 2х раз на один кошелек
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-  </section>
-  <!-- !Accordeon -->
+    </section>
+    <!-- !Accordeon -->
 
-  <!-- Footer -->
-  <footer class="bg-secondary bg-gradient">
-    <div class="container">
+    <!-- Footer -->
+    <footer class="bg-secondary bg-gradient">
+      <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="social-links">
-                    <a class="social-btn" href="#">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a class="social-btn" href="#">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a class="social-btn" href="#">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </div>
-
-                <p class="text-center">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry <a href="#">Terms of Service</a> and <a href="#"> Privacy Policy</a> Copyright © 2019 - 2020. <a href="https://www.markuptag.com/">markuptag.com</a>
-                </p>
+          <div class="col-md-8 offset-md-2">
+            <div class="social-links">
+              <a class="social-btn" href="#">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a class="social-btn" href="#">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a class="social-btn" href="#">
+                <i class="fab fa-discord"></i>
+              </a>
             </div>
+
+            <p class="text-center">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry <a href="#">Terms of Service</a> and
+              <a href="#"> Privacy Policy</a> Copyright © 2019 - 2020.
+              <a href="https://www.markuptag.com/">markuptag.com</a>
+            </p>
+          </div>
         </div>
-    </div>
-</footer>
-<!-- End Footer -->
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <script type="module" src="./js/main.js"></script>
   </body>
